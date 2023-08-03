@@ -1,10 +1,9 @@
 <?php
 include_once "DB.php";
-class Ad extends DB
-{
+class News extends DB{
     public function __construct()
     {
-        parent::__construct('ad');
+        parent::__construct('news');
     }
 
 }

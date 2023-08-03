@@ -29,4 +29,12 @@ function q($sql)
     return $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 }
 
-
+$Ad = new Ad;
+$Admin = new Admin;
+$Bottom = new Bottom;
+$Image = new Image;
+$Menu = new Menu;
+$Mvim = new Mvim;
+$News = new News;
+$Total = new Total;
+$Title = new Title;
