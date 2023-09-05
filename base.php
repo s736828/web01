@@ -25,7 +25,7 @@ function to($url)
 
 function q($sql)
 {
-    $pdo = new PDO("mysql:host=localhost;charset=utf8;dbname=db01,'root',''");
+    $pdo = new PDO("mysql:host=localhost;charset=utf8;dbname=db01",'root','');
     return $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 }
 
@@ -36,5 +36,5 @@ $Image = new Image;
 $Menu = new Menu;
 $Mvim = new Mvim;
 $News = new News;
-$Total = new Total;
 $Title = new Title;
+$Total = new Total;
